@@ -1,0 +1,74 @@
+name: arape
+description: "Arape — plataforma de agroturismo regional da Amazônia (protótipo de demonstração)."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Mapa (OpenStreetMap, sem API key)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Estado simples
+  provider: ^6.1.2
+
+  # Imagens em rede com cache + shimmer
+  cached_network_image: ^3.4.1
+  shimmer: ^3.0.0
+
+  # Tipografia
+  google_fonts: ^6.2.1
+
+  # Abrir WhatsApp / links externos
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.4
+
+# Tela de carregamento (splash) nativa — logo Arape sobre fundo branco.
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/logo_full.png
+  android_12:
+    image: assets/images/logo_emblem.png
+    color: "#FFFFFF"
+  web: false
+
+# Ícone do app gerado a partir do emblema do logo Arape.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/icon_foreground.png"
+  web:
+    generate: true
+    image_path: "assets/images/icon.png"
+    background_color: "#FFFFFF"
+    theme_color: "#005030"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/locais.json
+    - assets/data/categorias.json
+    - assets/data/rotas.json
+    - assets/data/perfil.json
+    - assets/data/aventureiros.json
+    - assets/images/

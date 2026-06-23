@@ -1,0 +1,7 @@
+[
+  { "nome": "Lucas", "lat": -9.9201, "lng": -63.0512, "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" },
+  { "nome": "Beatriz", "lat": -9.9342, "lng": -63.0289, "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" },
+  { "nome": "Thiago", "lat": -9.8987, "lng": -63.0601, "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200" },
+  { "nome": "Camila", "lat": -9.9555, "lng": -63.0445, "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" },
+  { "nome": "Rafael", "lat": -9.8801, "lng": -63.0334, "avatar": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200" }
+]

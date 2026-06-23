@@ -1,0 +1,35 @@
+[
+  {
+    "id": "rota_001",
+    "nome": "Rota das Cachoeiras de Ariquemes",
+    "descricao": "Um dia inteiro entre as quedas d'água mais bonitas da região, com paradas para banho e contemplação do pôr do sol.",
+    "imagem": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1200",
+    "duracaoEstimada": "1 dia",
+    "dificuldade": "Moderada",
+    "seloRecompensa": "Caçador de Cachoeiras",
+    "xpRecompensa": 150,
+    "paradas": ["loc_001", "loc_003", "loc_006"]
+  },
+  {
+    "id": "rota_002",
+    "nome": "Rota do Café e da Castanha",
+    "descricao": "Mergulhe na origem dos sabores da Amazônia: do cafezal sombreado ao manejo sustentável da castanha-do-pará.",
+    "imagem": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200",
+    "duracaoEstimada": "Meio dia",
+    "dificuldade": "Fácil",
+    "seloRecompensa": "Amante do Café",
+    "xpRecompensa": 120,
+    "paradas": ["loc_002", "loc_012", "loc_011"]
+  },
+  {
+    "id": "rota_003",
+    "nome": "Rota Cultural e Sabores",
+    "descricao": "Uma jornada que une a cultura originária Karipuna, a culinária regional e o pôr do sol do Mirante do Vale.",
+    "imagem": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=1200",
+    "duracaoEstimada": "1 dia",
+    "dificuldade": "Fácil",
+    "seloRecompensa": "Guardião da Cultura",
+    "xpRecompensa": 140,
+    "paradas": ["loc_008", "loc_007", "loc_006"]
+  }
+]

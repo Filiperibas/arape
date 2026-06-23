@@ -1,0 +1,7 @@
+{
+  "buildCommand": "echo 'Publicando o build local do Flutter (build/web)'",
+  "outputDirectory": "build/web",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

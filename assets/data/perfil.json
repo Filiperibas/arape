@@ -1,0 +1,22 @@
+{
+  "nome": "Aventureiro Arape",
+  "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400",
+  "locaisVisitados": 7,
+  "rotasCompletas": 2,
+  "xp": 430,
+  "nivel": "Explorador Regional",
+  "selos": [
+    { "id": "s1", "nome": "Caçador de Cachoeiras", "icone": "water", "conquistado": true },
+    { "id": "s2", "nome": "Amante do Café", "icone": "coffee", "conquistado": true },
+    { "id": "s3", "nome": "Trilheiro", "icone": "terrain", "conquistado": false },
+    { "id": "s4", "nome": "Guardião da Cultura", "icone": "festival", "conquistado": false },
+    { "id": "s5", "nome": "Mestre do Mel", "icone": "agriculture", "conquistado": true },
+    { "id": "s6", "nome": "Sabor da Floresta", "icone": "restaurant", "conquistado": false }
+  ],
+  "historico": [
+    { "local": "Cachoeira do Monte Negro", "data": "12 mai 2026" },
+    { "local": "Sítio Café da Mata", "data": "10 mai 2026" },
+    { "local": "Mirante do Vale", "data": "08 mai 2026" },
+    { "local": "Restaurante Sabor da Roça", "data": "03 mai 2026" }
+  ]
+}

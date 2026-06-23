@@ -1,0 +1,461 @@
+[
+  {
+    "id": "loc_001",
+    "nome": "Cachoeira do Monte Negro",
+    "categoria": "aguas",
+    "categoriaLabel": "Cachoeira",
+    "icone": "water",
+    "descricaoCurta": "Queda d'água cristalina cercada por mata nativa, ideal para banho.",
+    "descricaoCompleta": "A Cachoeira do Monte Negro é um dos cartões-postais naturais da região de Ariquemes. Com águas cristalinas e uma queda de cerca de 8 metros, é cercada por mata preservada e oferece poços naturais para banho. O acesso é por uma trilha leve de 15 minutos.",
+    "lat": -9.9089,
+    "lng": -63.0331,
+    "distancia": "12 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000",
+      "https://images.unsplash.com/photo-1480036012855-3e586d406c63?w=1000",
+      "https://images.unsplash.com/photo-1467890947394-8171244e5410?w=1000"
+    ],
+    "avaliacaoMedia": 4.8,
+    "totalAvaliacoes": 34,
+    "horario": "Todos os dias, 8h às 17h",
+    "valor": "Entrada: R$ 15,00",
+    "oQueEsperar": "Banho em poço natural, trilha leve, área para piquenique.",
+    "whatsapp": "5569999990001",
+    "verificado": true,
+    "produtos": [],
+    "avaliacoes": [
+      {
+        "autor": "Marina S.",
+        "estrelas": 5,
+        "comentario": "Lugar maravilhoso, água gelada e limpa. Vale muito a visita!",
+        "resposta": "Obrigado pela visita, Marina! Volte sempre."
+      },
+      {
+        "autor": "Carlos R.",
+        "estrelas": 4,
+        "comentario": "Muito bonito, só a trilha estava um pouco escorregadia.",
+        "resposta": null
+      }
+    ]
+  },
+  {
+    "id": "loc_002",
+    "nome": "Sítio Café da Mata — Linha C-65",
+    "categoria": "agroindustria",
+    "categoriaLabel": "Agroindústria",
+    "icone": "agriculture",
+    "descricaoCurta": "Café especial cultivado à sombra da floresta e torrado no próprio sítio.",
+    "descricaoCompleta": "No Sítio Café da Mata, a família Oliveira cultiva café robusta amazônico há três gerações. A visita inclui um passeio pelo cafezal sombreado, demonstração da torra artesanal e degustação. Um destino perfeito para quem quer entender a origem do que bebe.",
+    "lat": -9.9521,
+    "lng": -63.0712,
+    "distancia": "8 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1000",
+      "https://images.unsplash.com/photo-1524350876685-274059332603?w=1000"
+    ],
+    "avaliacaoMedia": 4.9,
+    "totalAvaliacoes": 21,
+    "horario": "Terça a domingo, 9h às 16h",
+    "valor": "Visita guiada: R$ 25,00 (com degustação)",
+    "oQueEsperar": "Tour pelo cafezal, torra artesanal ao vivo e degustação de cafés especiais.",
+    "whatsapp": "5569999990002",
+    "verificado": true,
+    "produtos": [
+      {
+        "nome": "Café torrado artesanal — 250g",
+        "preco": "R$ 28,00",
+        "imagem": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600"
+      },
+      {
+        "nome": "Café em grãos — 500g",
+        "preco": "R$ 48,00",
+        "imagem": "https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=600"
+      }
+    ],
+    "avaliacoes": [
+      {
+        "autor": "Júlia M.",
+        "estrelas": 5,
+        "comentario": "O melhor café que já tomei! Experiência incrível conhecer a origem.",
+        "resposta": "Que alegria, Júlia! O café fica ainda melhor sabendo de onde vem."
+      },
+      {
+        "autor": "Pedro A.",
+        "estrelas": 5,
+        "comentario": "Atendimento da família é impecável. Recomendo demais.",
+        "resposta": null
+      }
+    ]
+  },
+  {
+    "id": "loc_003",
+    "nome": "Balneário Rio Jamari",
+    "categoria": "aguas",
+    "categoriaLabel": "Balneário",
+    "icone": "pool",
+    "descricaoCurta": "Águas calmas do Rio Jamari com estrutura de lazer para a família.",
+    "descricaoCompleta": "O Balneário Rio Jamari é o point de fim de semana das famílias de Ariquemes. Águas tranquilas e rasas em boa parte, com prainha de areia, quiosques de comida regional e área de sombra. Ótimo para crianças e para relaxar.",
+    "lat": -9.8762,
+    "lng": -63.0189,
+    "distancia": "15 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?w=1000",
+      "https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?w=1000"
+    ],
+    "avaliacaoMedia": 4.5,
+    "totalAvaliacoes": 58,
+    "horario": "Todos os dias, 7h às 18h",
+    "valor": "Entrada: R$ 10,00 (crianças até 6 anos não pagam)",
+    "oQueEsperar": "Prainha de rio, quiosques, área para crianças e churrasqueiras.",
+    "whatsapp": "5569999990003",
+    "verificado": true,
+    "produtos": [],
+    "avaliacoes": [
+      {
+        "autor": "Fernanda L.",
+        "estrelas": 5,
+        "comentario": "Perfeito para ir com as crianças. Água limpa e rasa.",
+        "resposta": "Obrigado, Fernanda! Estamos sempre cuidando da estrutura para vocês."
+      },
+      {
+        "autor": "Ricardo T.",
+        "estrelas": 4,
+        "comentario": "Lugar bom, mas lotado nos domingos. Vá cedo!",
+        "resposta": null
+      }
+    ]
+  },
+  {
+    "id": "loc_004",
+    "nome": "Trilha da Serra dos Pacaás",
+    "categoria": "trilhas",
+    "categoriaLabel": "Trilha",
+    "icone": "terrain",
+    "descricaoCurta": "Trilha de nível moderado com vista panorâmica da floresta amazônica.",
+    "descricaoCompleta": "A Trilha da Serra dos Pacaás percorre cerca de 6 km em meio à mata, subindo gradualmente até um platô com vista de tirar o fôlego. No caminho, é comum avistar pássaros, primatas e árvores centenárias. Recomendada para quem já tem alguma experiência em caminhadas.",
+    "lat": -10.0124,
+    "lng": -63.1003,
+    "distancia": "28 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1000",
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1000"
+    ],
+    "avaliacaoMedia": 4.7,
+    "totalAvaliacoes": 19,
+    "horario": "Todos os dias, 6h às 15h (entrada até 12h)",
+    "valor": "Guia obrigatório: R$ 60,00 por grupo",
+    "oQueEsperar": "Caminhada de 6 km, observação de fauna, mirante natural no topo.",
+    "whatsapp": "5569999990004",
+    "verificado": false,
+    "produtos": [],
+    "avaliacoes": [
+      {
+        "autor": "Bruno K.",
+        "estrelas": 5,
+        "comentario": "A vista do topo compensa cada gota de suor. Levem água!",
+        "resposta": null
+      }
+    ]
+  },
+  {
+    "id": "loc_005",
+    "nome": "Agroindústria do Mel — Apiário Floresta Viva",
+    "categoria": "agroindustria",
+    "categoriaLabel": "Agroindústria",
+    "icone": "agriculture",
+    "descricaoCurta": "Mel silvestre e própolis produzidos no coração da floresta.",
+    "descricaoCompleta": "O Apiário Floresta Viva produz mel a partir de florações nativas da Amazônia, sem aditivos. A visita mostra todo o processo, das colmeias à extração, com paramentação de segurança. Há degustação de diferentes tipos de mel e venda direta dos produtos.",
+    "lat": -9.8345,
+    "lng": -63.0876,
+    "distancia": "22 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=1000",
+      "https://images.unsplash.com/photo-1471943311424-646960669fbc?w=1000"
+    ],
+    "avaliacaoMedia": 4.6,
+    "totalAvaliacoes": 14,
+    "horario": "Quarta a domingo, 8h às 15h",
+    "valor": "Visita: R$ 20,00 (com degustação)",
+    "oQueEsperar": "Visita às colmeias, processo de extração e degustação de méis.",
+    "whatsapp": "5569999990005",
+    "verificado": true,
+    "produtos": [
+      {
+        "nome": "Mel silvestre puro — 500g",
+        "preco": "R$ 35,00",
+        "imagem": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=600"
+      },
+      {
+        "nome": "Própolis em extrato — 30ml",
+        "preco": "R$ 22,00",
+        "imagem": "https://images.unsplash.com/photo-1558642891-54be180ea339?w=600"
+      }
+    ],
+    "avaliacoes": [
+      {
+        "autor": "Sandra P.",
+        "estrelas": 5,
+        "comentario": "Mel sensacional e muito aprendizado sobre as abelhas.",
+        "resposta": "Obrigado, Sandra! As abelhas agradecem a visita."
+      }
+    ]
+  },
+  {
+    "id": "loc_006",
+    "nome": "Mirante do Vale",
+    "categoria": "trilhas",
+    "categoriaLabel": "Mirante",
+    "icone": "landscape",
+    "descricaoCurta": "Curta subida que leva a uma vista ampla do vale e do pôr do sol.",
+    "descricaoCompleta": "O Mirante do Vale é acessível por uma caminhada leve de 20 minutos e recompensa com uma vista de 180° do vale amazônico. É o local preferido para assistir ao pôr do sol na região. Há um pequeno deque de madeira e bancos para contemplação.",
+    "lat": -9.9456,
+    "lng": -62.9987,
+    "distancia": "18 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1000",
+      "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1000"
+    ],
+    "avaliacaoMedia": 4.9,
+    "totalAvaliacoes": 41,
+    "horario": "Todos os dias, 5h às 19h",
+    "valor": "Gratuito",
+    "oQueEsperar": "Caminhada leve, deque de contemplação e pôr do sol espetacular.",
+    "whatsapp": "5569999990006",
+    "verificado": true,
+    "produtos": [],
+    "avaliacoes": [
+      {
+        "autor": "Letícia F.",
+        "estrelas": 5,
+        "comentario": "Pôr do sol inesquecível. Cheguei 30 min antes e valeu cada minuto.",
+        "resposta": null
+      },
+      {
+        "autor": "André N.",
+        "estrelas": 5,
+        "comentario": "Lugar tranquilo e de graça. Perfeito para um fim de tarde.",
+        "resposta": null
+      }
+    ]
+  },
+  {
+    "id": "loc_007",
+    "nome": "Restaurante Sabor da Roça",
+    "categoria": "gastronomia",
+    "categoriaLabel": "Gastronomia",
+    "icone": "restaurant",
+    "descricaoCurta": "Comida caipira amazônica feita com ingredientes da própria horta.",
+    "descricaoCompleta": "O Sabor da Roça serve o melhor da culinária regional: peixes do Rio Jamari, galinha caipira, farinha artesanal e doces de frutas amazônicas. Tudo preparado com ingredientes da horta e de produtores vizinhos. Ambiente rústico e acolhedor em meio à natureza.",
+    "lat": -9.9201,
+    "lng": -63.0598,
+    "distancia": "6 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1000",
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000"
+    ],
+    "avaliacaoMedia": 4.7,
+    "totalAvaliacoes": 73,
+    "horario": "Quinta a domingo, 11h às 16h",
+    "valor": "Pratos a partir de R$ 35,00",
+    "oQueEsperar": "Culinária regional, peixe fresco e doces de frutas amazônicas.",
+    "whatsapp": "5569999990007",
+    "verificado": true,
+    "produtos": [],
+    "avaliacoes": [
+      {
+        "autor": "Marcelo D.",
+        "estrelas": 5,
+        "comentario": "O tambaqui assado é imperdível! Comida de verdade.",
+        "resposta": "Valeu, Marcelo! O tambaqui é nossa especialidade mesmo."
+      },
+      {
+        "autor": "Cláudia V.",
+        "estrelas": 4,
+        "comentario": "Tudo muito gostoso, só demora um pouco no fim de semana.",
+        "resposta": null
+      }
+    ]
+  },
+  {
+    "id": "loc_008",
+    "nome": "Aldeia Karipuna — Visita Cultural",
+    "categoria": "cultura",
+    "categoriaLabel": "Cultura",
+    "icone": "festival",
+    "descricaoCurta": "Vivência cultural mediada e autorizada pela comunidade Karipuna.",
+    "descricaoCompleta": "A visita à Aldeia Karipuna é uma experiência de troca cultural realizada com mediação e autorização prévia da comunidade. Os visitantes conhecem o modo de vida, o artesanato, a culinária e os saberes tradicionais do povo Karipuna. Uma oportunidade de aprender com respeito e valorizar a cultura originária da Amazônia. As visitas são limitadas e agendadas para preservar o cotidiano da comunidade.",
+    "lat": -9.7689,
+    "lng": -63.1234,
+    "distancia": "35 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=1000",
+      "https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1000"
+    ],
+    "avaliacaoMedia": 5.0,
+    "totalAvaliacoes": 12,
+    "horario": "Apenas com agendamento prévio",
+    "valor": "Contribuição combinada com a comunidade",
+    "oQueEsperar": "Vivência cultural mediada, artesanato e saberes tradicionais. Respeite as orientações da comunidade.",
+    "whatsapp": "5569999990008",
+    "verificado": true,
+    "produtos": [],
+    "avaliacoes": [
+      {
+        "autor": "Tatiane R.",
+        "estrelas": 5,
+        "comentario": "Experiência transformadora. Saí com outro olhar sobre a floresta e seus povos.",
+        "resposta": null
+      }
+    ]
+  },
+  {
+    "id": "loc_009",
+    "nome": "Fazenda do Cacau — Chocolate Artesanal",
+    "categoria": "agroindustria",
+    "categoriaLabel": "Agroindústria",
+    "icone": "agriculture",
+    "descricaoCurta": "Do fruto à barra: chocolate artesanal feito com cacau amazônico.",
+    "descricaoCompleta": "A Fazenda do Cacau cultiva cacau nativo em sistema agroflorestal e produz chocolate artesanal (bean to bar) no próprio local. A visita acompanha todo o processo: colheita, fermentação, secagem, torra e produção das barras. Termina com uma degustação harmonizada.",
+    "lat": -9.8901,
+    "lng": -63.1102,
+    "distancia": "20 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1511381939415-e44015466834?w=1000",
+      "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=1000"
+    ],
+    "avaliacaoMedia": 4.8,
+    "totalAvaliacoes": 27,
+    "horario": "Terça a sábado, 9h às 16h",
+    "valor": "Tour completo: R$ 40,00 (com degustação)",
+    "oQueEsperar": "Processo bean to bar completo e degustação de chocolates.",
+    "whatsapp": "5569999990009",
+    "verificado": true,
+    "produtos": [
+      {
+        "nome": "Chocolate 70% cacau amazônico — 80g",
+        "preco": "R$ 24,00",
+        "imagem": "https://images.unsplash.com/photo-1623660053975-cf75a8be0908?w=600"
+      },
+      {
+        "nome": "Nibs de cacau — 150g",
+        "preco": "R$ 18,00",
+        "imagem": "https://images.unsplash.com/photo-1610450949065-1f2841536c88?w=600"
+      }
+    ],
+    "avaliacoes": [
+      {
+        "autor": "Gustavo H.",
+        "estrelas": 5,
+        "comentario": "Chocolate de outro nível. Dá pra sentir a diferença do cacau amazônico.",
+        "resposta": "Obrigado, Gustavo! É o terroir da floresta na barra."
+      }
+    ]
+  },
+  {
+    "id": "loc_010",
+    "nome": "Pesqueiro Águas Claras",
+    "categoria": "aguas",
+    "categoriaLabel": "Pesqueiro",
+    "icone": "phishing",
+    "descricaoCurta": "Pesque-pague com lagos limpos e estrutura completa para o dia todo.",
+    "descricaoCompleta": "O Pesqueiro Águas Claras oferece três lagos com tambaqui, pintado e tilápia, em meio a uma área verde preservada. Tem aluguel de equipamento, restaurante que prepara o seu peixe na hora e área de descanso com redário. Ideal para um dia tranquilo em família.",
+    "lat": -9.9678,
+    "lng": -63.0234,
+    "distancia": "14 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1498855926480-d98e83099315?w=1000",
+      "https://images.unsplash.com/photo-1445452916036-9022dfd33aa8?w=1000"
+    ],
+    "avaliacaoMedia": 4.4,
+    "totalAvaliacoes": 31,
+    "horario": "Todos os dias, 6h às 18h",
+    "valor": "Entrada: R$ 20,00 + valor do peixe por kg",
+    "oQueEsperar": "Pesca esportiva, aluguel de equipamento e peixe preparado na hora.",
+    "whatsapp": "5569999990010",
+    "verificado": false,
+    "produtos": [],
+    "avaliacoes": [
+      {
+        "autor": "Rafael B.",
+        "estrelas": 4,
+        "comentario": "Pesquei meu primeiro tambaqui aqui! Estrutura boa.",
+        "resposta": null
+      }
+    ]
+  },
+  {
+    "id": "loc_011",
+    "nome": "Cafeteria Rural Grão do Cerrado",
+    "categoria": "gastronomia",
+    "categoriaLabel": "Cafeteria",
+    "icone": "coffee",
+    "descricaoCurta": "Café da manhã colonial com produtos da agricultura familiar da região.",
+    "descricaoCompleta": "A Cafeteria Rural Grão do Cerrado serve um café da manhã colonial farto, com bolos caseiros, pães, geleias, frutas e o café especial da região. Funciona em uma charmosa casa de madeira cercada por jardim. Toda a produção vem de famílias agricultoras vizinhas.",
+    "lat": -9.9034,
+    "lng": -63.0456,
+    "distancia": "5 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1000",
+      "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1000"
+    ],
+    "avaliacaoMedia": 4.6,
+    "totalAvaliacoes": 49,
+    "horario": "Sábado e domingo, 7h às 12h",
+    "valor": "Café colonial: R$ 45,00 por pessoa",
+    "oQueEsperar": "Café da manhã colonial farto com produtos da agricultura familiar.",
+    "whatsapp": "5569999990011",
+    "verificado": true,
+    "produtos": [],
+    "avaliacoes": [
+      {
+        "autor": "Patrícia G.",
+        "estrelas": 5,
+        "comentario": "O café colonial é sensacional, dá pra passar a manhã toda.",
+        "resposta": "Que bom, Patrícia! Sempre tem bolo fresquinho saindo do forno."
+      }
+    ]
+  },
+  {
+    "id": "loc_012",
+    "nome": "Castanhal Comunitário",
+    "categoria": "agroindustria",
+    "categoriaLabel": "Agroindústria",
+    "icone": "agriculture",
+    "descricaoCurta": "Manejo sustentável da castanha-do-pará por uma cooperativa local.",
+    "descricaoCompleta": "O Castanhal Comunitário reúne famílias extrativistas que fazem o manejo sustentável da castanha-do-pará na floresta. A visita mostra a coleta dos ouriços, o beneficiamento e a produção do óleo de castanha. Um exemplo vivo de como a floresta em pé gera renda.",
+    "lat": -9.8123,
+    "lng": -63.0445,
+    "distancia": "25 km",
+    "imagens": [
+      "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1000",
+      "https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?w=1000"
+    ],
+    "avaliacaoMedia": 4.7,
+    "totalAvaliacoes": 16,
+    "horario": "Segunda a sexta, 8h às 14h",
+    "valor": "Visita guiada: R$ 30,00",
+    "oQueEsperar": "Coleta de castanha, beneficiamento e produção de óleo. Floresta em pé gerando renda.",
+    "whatsapp": "5569999990012",
+    "verificado": true,
+    "produtos": [
+      {
+        "nome": "Castanha-do-pará torrada — 300g",
+        "preco": "R$ 32,00",
+        "imagem": "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=600"
+      },
+      {
+        "nome": "Óleo de castanha extravirgem — 200ml",
+        "preco": "R$ 45,00",
+        "imagem": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600"
+      }
+    ],
+    "avaliacoes": [
+      {
+        "autor": "Eduardo M.",
+        "estrelas": 5,
+        "comentario": "Aprendi muito sobre o extrativismo sustentável. Castanha fresquíssima!",
+        "resposta": "Obrigado, Eduardo! A floresta agradece quem valoriza a castanha."
+      }
+    ]
+  }
+]

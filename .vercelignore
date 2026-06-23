@@ -1,0 +1,19 @@
+# Só o build/web precisa ir pra Vercel. As barras na frente (/) ancoram na raiz,
+# pra NÃO ignorar build/web por engano.
+/.dart_tool/
+/.idea/
+/android/
+/ios/
+/linux/
+/macos/
+/windows/
+/test/
+/lib/
+/assets/
+/web/
+/build/app/
+/build/ios/
+/build/linux/
+/build/macos/
+/build/windows/
+*.iml

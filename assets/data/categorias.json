@@ -1,0 +1,8 @@
+[
+  { "id": "todos", "label": "Todos", "icone": "apps" },
+  { "id": "trilhas", "label": "Trilhas", "icone": "terrain" },
+  { "id": "aguas", "label": "Águas", "icone": "water" },
+  { "id": "agroindustria", "label": "Agroindústrias", "icone": "agriculture" },
+  { "id": "cultura", "label": "Cultura", "icone": "festival" },
+  { "id": "gastronomia", "label": "Gastronomia", "icone": "restaurant" }
+]
