@@ -185,25 +185,57 @@ Aplicamos os fundamentos de Teste de Software (BSTQB, 2023, Cap. 6) ao MVP. Defi
 - **Sem segredos no repositório.** Não há chaves de API, tokens ou credenciais — porque não há serviços pagos integrados (o OpenStreetMap dispensa chave; o WhatsApp usa link público `wa.me/`).
 - **HTTPS em todas as comunicações.** Deploy Vercel entrega HTTPS por padrão; imagens externas (Unsplash) via HTTPS; link de WhatsApp HTTPS.
 
-### Análise do OWASP Top 10 aplicada ao Arape
+### Análise do [OWASP Top 10 — 2025](https://owasp.org/Top10/2025/) aplicada ao Arape
 
-| Risco OWASP | Aplica? | Postura adotada |
+> A versão **2025** do OWASP Top 10 trouxe duas mudanças relevantes pra nossa análise: **A02:2025 — Security Misconfiguration** subiu do 5º para o 2º lugar, e duas categorias novas entraram (A03 Software Supply Chain Failures e A10 Mishandling of Exceptional Conditions).
+
+| Risco OWASP 2025 | Aplica? | Postura adotada no Arape |
 |---|---|---|
-| **A01** Quebra de controle de acesso | ❌ Não aplicável | Sem controle de acesso porque não há recurso restrito |
-| **A02** Falhas criptográficas | ❌ Não aplicável | Não armazena/transmite dados sensíveis |
-| **A03** Injeção (SQL / NoSQL) | ❌ Não aplicável | Sem banco; dados são JSONs estáticos no bundle |
-| **A04** Projeto inseguro | ✅ Aplicado | **Privacidade por design**; sem coleta; sem PII |
-| **A05** Configuração insegura | ✅ Aplicado | Headers padrão seguros do Vercel; HTTPS forçado |
-| **A06** Componentes vulneráveis | ✅ Mitigado | **Dependabot ativado** no repositório; dependências do `pubspec.yaml` revisadas |
-| **A07** Falhas de autenticação | ❌ Não aplicável | Sem autenticação por escolha consciente de projeto |
-| **A08** Falhas de integridade | ✅ Mitigado | Build do Flutter versionado; deploy reproduzível na Vercel |
-| **A09** Falhas de log / monitoramento | ⚠️ Parcial | Logs nativos da Vercel + console do navegador (suficiente para um MVP) |
-| **A10** SSRF | ❌ Não aplicável | Sem requisições server-side; tudo é client-side |
+| **A01:2025** Broken Access Control | ❌ Não aplicável | Sem recurso restrito → sem controle de acesso a quebrar |
+| **A02:2025** Security Misconfiguration | ✅ Mitigado | **Headers de segurança configurados no `vercel.json`** (X-Frame-Options, X-Content-Type-Options, Strict-Transport-Security, Referrer-Policy, Permissions-Policy). Validação por **OWASP ZAP** — ver seção abaixo. |
+| **A03:2025** Software Supply Chain Failures | ✅ Mitigado | **Dependabot alerts + security updates ativados** no repo; `pubspec.lock` versionado; **GitHub Secret Scanning + Push Protection** ativos. |
+| **A04:2025** Cryptographic Failures | ❌ Não aplicável | Não armazena/transmite dados sensíveis; tráfego em HTTPS |
+| **A05:2025** Injection | ❌ Não aplicável | Sem banco; dados são JSONs estáticos no bundle |
+| **A06:2025** Insecure Design | ✅ Aplicado | **Privacidade por design**: sem coleta de PII, sem login, sem backend — superfície de ataque minimizada na concepção |
+| **A07:2025** Authentication Failures | ❌ Não aplicável | Sem autenticação por escolha consciente de projeto |
+| **A08:2025** Software or Data Integrity Failures | ✅ Mitigado | Build versionado no Git; deploy reproduzível na Vercel; dependências travadas via `pubspec.lock` |
+| **A09:2025** Logging & Alerting Failures | ⚠️ Parcial | Logs nativos da Vercel + Dependabot alerts por e-mail (suficiente pro MVP) |
+| **A10:2025** Mishandling of Exceptional Conditions | ✅ Aplicado | Tratamento de erro nas chamadas async do `AppState.inicializar()` (estado `erro` exibido); validação de entrada no formulário de avaliação (comentário em branco → texto padrão) |
+
+### Análise dinâmica com OWASP ZAP
+
+Executamos uma varredura ativa com **OWASP ZAP 2.17.0** contra a aplicação publicada em `arape.vercel.app`. Resultado da varredura inicial:
+
+| Severidade | Findings (antes das mitigações) |
+|---|---|
+| 🔴 High | **0** |
+| 🟠 Medium | 3 (CSP Header Not Set, Anti-clickjacking Header, Cross-Domain Misconfiguration) |
+| 🟡 Low | 1 (X-Content-Type-Options Header Missing) |
+| 🔵 Informational | 4 (Cache directives, Modern Web Application, Suspicious Comments, Retrieved from Cache) |
+
+**Mitigações aplicadas** após a varredura (em `vercel.json`):
+
+| Finding ZAP | Mitigação |
+|---|---|
+| Missing Anti-clickjacking Header | ✅ Adicionado `X-Frame-Options: SAMEORIGIN` |
+| X-Content-Type-Options Missing | ✅ Adicionado `X-Content-Type-Options: nosniff` |
+| (Bônus defensivo) | ✅ Adicionado `Strict-Transport-Security` (HSTS), `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy` bloqueando câmera/microfone/geolocalização |
+
+**Findings deliberadamente não corrigidos** (com justificativa técnica):
+
+- **CSP Header Not Set** — implementar uma Content-Security-Policy estrita em Flutter Web exige whitelist de `'unsafe-inline'` para os scripts de bootstrap, das fontes do Google Fonts, dos tiles do OpenStreetMap, das imagens do Unsplash e do CanvasKit hospedado no `gstatic.com`. Decisão consciente: adiar pra v2 com uma policy bem desenhada que não comprometa o app.
+- **Suspicious Comments** — strings de debug no `main.dart.js` compilado vêm do próprio toolchain do Flutter Web e não são endereço, credencial ou segredo (verificado).
+- **Cross-Domain Misconfiguration** — assets externos (Unsplash, OSM tiles) estão fora do nosso controle.
+- **Cache-control Directives** / **Retrieved from Cache** — esperado e desejado para um SPA estático (melhora performance e UX); não há recurso sensível em cache.
+
+> 📂 Relatório completo do ZAP: `docs/security/zap-report.html`
 
 ### Ferramentas de verificação utilizadas
-- **GitHub Secret Scanning** — ativado, varre o repositório procurando segredos vazados.
-- **Dependabot** — ativado, varre `pubspec.lock` por dependências vulneráveis.
-- **Headers de segurança HTTPS / HSTS** — herdados da configuração padrão da Vercel.
+- **OWASP ZAP 2.17.0** — varredura dinâmica ativa contra `arape.vercel.app` (relatório em `docs/security/`)
+- **GitHub Secret Scanning + Push Protection** — ativados; bloqueiam push se detectarem segredo
+- **Dependabot alerts + security updates** — ativados; varrem `pubspec.lock` por vulnerabilidades e abrem PRs automáticas
+- **Headers de segurança** — configurados explicitamente no `vercel.json`
+- **`flutter analyze`** — análise estática do código rodando em cada build (zero issues)
 
 ### Limitações conhecidas (e o caminho pra V2)
 Em uma evolução com backend, surge a necessidade de:
@@ -211,7 +243,8 @@ Em uma evolução com backend, surge a necessidade de:
 - Controle de acesso por perfil (turista / proprietário / admin)
 - Validação server-side e sanitização de entradas
 - Logs de auditoria e monitoramento contínuo
-- Endereçamento completo do OWASP Top 10
+- **Content-Security-Policy** estrita (hoje propositalmente ausente)
+- Endereçamento completo do OWASP Top 10 2025
 
 Quando essa evolução ocorrer, o projeto já tem o **enquadramento conceitual** mapeado nesta seção, bastando aplicá-lo às novas superfícies criadas.
 
